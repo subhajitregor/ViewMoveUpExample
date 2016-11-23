@@ -15,6 +15,7 @@
 		9F136E6E1DE5D7210081630C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F136E6C1DE5D7210081630C /* LaunchScreen.storyboard */; };
 		9F136E791DE5D7210081630C /* ViewMoveUpExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F136E781DE5D7210081630C /* ViewMoveUpExampleTests.m */; };
 		9F136E841DE5D7210081630C /* ViewMoveUpExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F136E831DE5D7210081630C /* ViewMoveUpExampleUITests.m */; };
+		9F136E941DE5D7AD0081630C /* UIView+AnimateUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F136E931DE5D7AD0081630C /* UIView+AnimateUp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		9F136E7F1DE5D7210081630C /* ViewMoveUpExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewMoveUpExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F136E831DE5D7210081630C /* ViewMoveUpExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewMoveUpExampleUITests.m; sourceTree = "<group>"; };
 		9F136E851DE5D7210081630C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F136E921DE5D7AD0081630C /* UIView+AnimateUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AnimateUp.h"; sourceTree = "<group>"; };
+		9F136E931DE5D7AD0081630C /* UIView+AnimateUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AnimateUp.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		9F136E521DE5D7210081630C = {
 			isa = PBXGroup;
 			children = (
+				9F136E911DE5D7AD0081630C /* UIViewAnimateUpNDown */,
 				9F136E5D1DE5D7210081630C /* ViewMoveUpExample */,
 				9F136E771DE5D7210081630C /* ViewMoveUpExampleTests */,
 				9F136E821DE5D7210081630C /* ViewMoveUpExampleUITests */,
@@ -138,6 +142,15 @@
 				9F136E851DE5D7210081630C /* Info.plist */,
 			);
 			path = ViewMoveUpExampleUITests;
+			sourceTree = "<group>";
+		};
+		9F136E911DE5D7AD0081630C /* UIViewAnimateUpNDown */ = {
+			isa = PBXGroup;
+			children = (
+				9F136E921DE5D7AD0081630C /* UIView+AnimateUp.h */,
+				9F136E931DE5D7AD0081630C /* UIView+AnimateUp.m */,
+			);
+			path = UIViewAnimateUpNDown;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F136E661DE5D7210081630C /* ViewController.m in Sources */,
+				9F136E941DE5D7AD0081630C /* UIView+AnimateUp.m in Sources */,
 				9F136E631DE5D7210081630C /* AppDelegate.m in Sources */,
 				9F136E601DE5D7210081630C /* main.m in Sources */,
 			);
@@ -429,9 +443,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YXUXCVBT88;
 				INFOPLIST_FILE = ViewMoveUpExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.regor.ViewMoveUpExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -441,9 +457,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YXUXCVBT88;
 				INFOPLIST_FILE = ViewMoveUpExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.regor.ViewMoveUpExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -516,6 +534,7 @@
 				9F136E8A1DE5D7210081630C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F136E8B1DE5D7210081630C /* Build configuration list for PBXNativeTarget "ViewMoveUpExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +543,7 @@
 				9F136E8D1DE5D7210081630C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F136E8E1DE5D7210081630C /* Build configuration list for PBXNativeTarget "ViewMoveUpExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +552,7 @@
 				9F136E901DE5D7210081630C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
