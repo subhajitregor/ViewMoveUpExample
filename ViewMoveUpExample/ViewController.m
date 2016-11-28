@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *tf2;
 @property (weak, nonatomic) IBOutlet UITextField *tf3;
 @property (weak, nonatomic) IBOutlet UITextField *tf4;
+@property (weak, nonatomic) IBOutlet UIView *viewForT3;
 
 @end
 
@@ -37,10 +38,10 @@
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
 
-//    CGRect textFieldRectWithRespectToSelfView = textField.frame;  // [textField convertRect:textField.frame toView:self.view];
-//    
-//
-//    [self.view animateUpToTargetYOrigin:textFieldRectWithRespectToSelfView.origin.y + textFieldRectWithRespectToSelfView.size.height];
+    CGRect textFieldRectWithRespectToSelfView = [textField.superview convertRect:textField.frame toView:self.view];
+    
+
+    [self.view animateUpToTargetYOrigin:textFieldRectWithRespectToSelfView.origin.y + textFieldRectWithRespectToSelfView.size.height];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
