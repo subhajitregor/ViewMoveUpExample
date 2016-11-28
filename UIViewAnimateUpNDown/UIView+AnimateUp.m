@@ -21,7 +21,7 @@
         }
         [UIView animateWithDuration:0.3f animations:^{
 
-                self.frame = CGRectMake(self.frame.origin.x, -yOrigin, self.frame.size.width, self.frame.size.height);
+                self.bounds = CGRectMake(self.frame.origin.x, yOrigin, self.frame.size.width, self.frame.size.height);
 
             
         }];
